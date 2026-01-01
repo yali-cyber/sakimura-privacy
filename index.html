@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>プライバシーポリシー | DRMランチパッケージ</title>
+    <meta name="robots" content="noindex, nofollow">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
@@ -36,32 +37,32 @@
         .container {
             max-width: 900px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 0 20px;
         }
 
-        /* Header */
         header {
-            background: linear-gradient(135deg, #1A1A1A 0%, #333333 100%);
+            background: var(--color-black);
             color: var(--color-white);
-            padding: 40px 0;
-            text-align: center;
-            margin-bottom: 50px;
+            padding: 30px 0;
+            border-bottom: 5px solid var(--color-danger);
         }
 
-        header h1 {
-            font-size: clamp(1.5rem, 4vw, 2rem);
+        .header-title {
+            font-size: 1.8rem;
             font-weight: 900;
+            text-align: center;
         }
 
-        header p {
-            margin-top: 15px;
-            font-size: 0.9rem;
-            opacity: 0.9;
+        main {
+            padding: 60px 0;
         }
 
-        /* Main Content */
-        .content {
-            background: var(--color-white);
+        .page-title {
+            font-size: 2rem;
+            font-weight: 900;
+            margin-bottom: 40px;
+            text-align: center;
+            color: var(--color-black);
         }
 
         .intro-text {
@@ -69,138 +70,106 @@
             padding: 30px;
             margin-bottom: 50px;
             border-left: 5px solid var(--color-danger);
-            line-height: 1.9;
-        }
-
-        /* Article Section */
-        .article-section {
-            background: var(--color-white);
-            padding: 30px;
-            margin-bottom: 30px;
-            border: 1px solid var(--color-border);
-            border-left: 5px solid var(--color-danger);
-        }
-
-        .article-section h2 {
-            color: var(--color-danger);
-            font-size: 1.3rem;
-            margin-bottom: 20px;
-            font-weight: 900;
-        }
-
-        .article-section p {
-            margin-bottom: 15px;
-            line-height: 1.9;
-        }
-
-        .article-section ol {
-            margin-left: 25px;
-            margin-top: 15px;
-        }
-
-        .article-section li {
-            margin-bottom: 12px;
             line-height: 1.8;
         }
 
-        /* Contact Section */
-        .contact-section {
-            background: var(--color-bg-light);
-            padding: 40px;
-            margin: 50px 0;
-            text-align: center;
-            border-top: 3px solid var(--color-danger);
+        .section {
+            margin-bottom: 50px;
         }
 
-        .contact-section h3 {
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--color-danger);
+            color: var(--color-black);
+        }
+
+        .section-content {
+            background: var(--color-bg-light);
+            padding: 30px;
+            line-height: 1.8;
+        }
+
+        .section-content h4 {
+            font-size: 1.2rem;
+            font-weight: 900;
+            margin: 30px 0 15px;
+            color: var(--color-danger);
+        }
+
+        .section-content h4:first-child {
+            margin-top: 0;
+        }
+
+        .section-content ul {
+            margin: 15px 0 15px 25px;
+        }
+
+        .section-content li {
+            margin-bottom: 10px;
+        }
+
+        .contact-box {
+            background: var(--color-bg-light);
+            border: 3px solid var(--color-border);
+            padding: 40px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .contact-box h3 {
             font-size: 1.5rem;
             margin-bottom: 20px;
             color: var(--color-black);
-            font-weight: 900;
         }
 
-        .contact-info {
-            margin-top: 30px;
-            text-align: left;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .contact-info p {
-            margin-bottom: 15px;
-            font-size: 1.1rem;
-        }
-
-        .contact-info strong {
-            color: var(--color-danger);
-        }
-
-        .contact-info .email {
-            font-size: 1.3rem;
-            color: var(--color-danger);
-            font-weight: 700;
-            margin-top: 10px;
-        }
-
-        /* Date Section */
-        .date-section {
-            text-align: right;
-            margin: 40px 0;
-            padding: 20px;
-            background: var(--color-bg-light);
-            border-top: 2px solid var(--color-border);
-        }
-
-        .date-section p {
-            font-weight: 700;
-            color: var(--color-black);
-        }
-
-        /* Back Link */
-        .back-link {
-            text-align: center;
-            margin: 50px 0;
-        }
-
-        .back-link a {
+        .contact-email {
             display: inline-block;
             background: var(--color-danger);
             color: var(--color-white);
             padding: 15px 40px;
+            margin-top: 20px;
             text-decoration: none;
-            font-weight: 700;
+            font-weight: 900;
+            font-size: 1.1rem;
             transition: all 0.3s ease;
         }
 
-        .back-link a:hover {
+        .contact-email:hover {
             background: #990000;
-            transform: translateY(-2px);
         }
 
-        /* Footer */
         footer {
             background: var(--color-black);
             color: var(--color-white);
-            padding: 30px 0;
+            padding: 40px 0;
             text-align: center;
             font-size: 0.9rem;
+            margin-top: 80px;
         }
 
-        /* Responsive */
+        footer a {
+            color: var(--color-white);
+            text-decoration: underline;
+            margin: 0 15px;
+        }
+
+        .update-date {
+            text-align: right;
+            color: var(--color-gray);
+            font-size: 0.9rem;
+            margin-bottom: 40px;
+        }
+
         @media (max-width: 768px) {
             body {
                 font-size: 14px;
             }
 
-            .intro-text,
-            .article-section,
-            .contact-section {
-                padding: 20px;
-            }
-
-            .contact-info {
-                text-align: center;
+            .page-title {
+                font-size: 1.5rem;
             }
         }
     </style>
@@ -208,107 +177,205 @@
 <body>
     <header>
         <div class="container">
-            <h1>プライバシーポリシー</h1>
-            <p>個人情報保護方針</p>
+            <h1 class="header-title">DRMランチパッケージ</h1>
         </div>
     </header>
 
-    <div class="container">
-        <div class="content">
+    <main>
+        <div class="container">
+            <h1 class="page-title">プライバシーポリシー<br>(個人情報保護方針)</h1>
+
+            <p class="update-date">制定日:2026年1月1日<br>最終改定日:2026年1月1日</p>
+
             <div class="intro-text">
                 <p>
-                    EZ企画合同会社（以下、「当方」といいます。）は、本ウェブサイト上で提供するサービス（以下、「本サービス」といいます。）における、
-                    ユーザーの個人情報の取扱いについて、以下のとおりプライバシーポリシー（以下、「本ポリシー」といいます。）を定めます。
+                    EZ企画合同会社(以下、「当社」といいます)は、お客様の個人情報を適切に取り扱うことが事業活動の基本であり、社会的責務であると認識しております。<br>
+                    本プライバシーポリシーは、当社がお客様の個人情報をどのように収集・利用・管理・保護するかについて定めたものです。
                 </p>
             </div>
 
-            <div class="article-section">
-                <h2>第1条（個人情報）</h2>
-                <p>
-                    「個人情報」とは、個人情報保護法にいう「個人情報」を指すものとし、生存する個人に関する情報であって、
-                    当該情報に含まれる氏名、生年月日、住所、電話番号、連絡先その他の記述等により特定の個人を識別できる情報及び容貌、指紋、声紋にかかるデータ、
-                    及び健康保険証の保険者番号などの当該情報単体から特定の個人を識別できる情報（個人識別情報）を指します。
-                </p>
-            </div>
-
-            <div class="article-section">
-                <h2>第2条（個人情報の収集方法）</h2>
-                <p>
-                    当方は、ユーザーが利用登録をする際に氏名、住所、電話番号、メールアドレス、クレジットカード番号などの個人情報をお尋ねすることがあります。
-                </p>
-            </div>
-
-            <div class="article-section">
-                <h2>第3条（個人情報を収集・利用する目的）</h2>
-                <p>当方が個人情報を収集・利用する目的は、以下のとおりです。</p>
-                <ol>
-                    <li>当方サービスの提供・運営のため</li>
-                    <li>ユーザーからのお問い合わせに回答するため（本人確認を行うことを含む）</li>
-                    <li>ユーザーが利用中のサービスの新機能、更新情報、キャンペーン等及び当方が提供する他のサービスの案内のメールを送付するため</li>
-                    <li>メンテナンス、重要なお知らせなど必要に応じたご連絡のため</li>
-                    <li>利用規約に違反したユーザーや、不正・不当な目的でサービスを利用しようとするユーザーの特定をし、ご利用をお断りするため</li>
-                    <li>上記の利用目的に付随する目的</li>
-                </ol>
-            </div>
-
-            <div class="article-section">
-                <h2>第4条（利用目的の変更）</h2>
-                <p>
-                    当方は、利用目的が変更前と関連性を有すると合理的に認められる場合に限り、個人情報の利用目的を変更するものとします。
-                </p>
-            </div>
-
-            <div class="article-section">
-                <h2>第5条（個人情報の第三者提供）</h2>
-                <p>
-                    当方は、次に掲げる場合を除いて、あらかじめユーザーの同意を得ることなく、第三者に個人情報を提供することはありません。
-                    ただし、個人情報保護法その他の法令で認められる場合を除きます。
-                </p>
-                <ol>
-                    <li>人の生命、身体または財産の保護のために必要がある場合であって、本人の同意を得ることが困難であるとき</li>
-                    <li>公衆衛生の向上または児童の健全な育成の推進のために特に必要がある場合であって、本人の同意を得ることが困難であるとき</li>
-                    <li>国の機関もしくは地方公共団体またはその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって、本人の同意を得ることにより当該事務の遂行に支障を及ぼすおそれがあるとき</li>
-                </ol>
-            </div>
-
-            <div class="article-section">
-                <h2>第6条（個人情報の開示・訂正・利用停止等）</h2>
-                <p>
-                    お客様から個人情報の開示、訂正、利用停止等を求められた場合、当方は本人確認の上で速やかに対応いたします。
-                </p>
-            </div>
-
-            <div class="article-section">
-                <h2>第7条（お問い合わせ窓口）</h2>
-                <p>
-                    本ポリシーに関するお問い合わせは、下記の窓口までお願いいたします。
-                </p>
-                <div class="contact-info" style="margin-top: 30px;">
-                    <p><strong>事業者名:</strong> EZ企画合同会社</p>
-                    <p><strong>Eメールアドレス:</strong></p>
-                    <p class="email">info@sakimura.info</p>
+            <div class="section">
+                <h2 class="section-title">1. 個人情報の定義</h2>
+                <div class="section-content">
+                    <p>
+                        本プライバシーポリシーにおいて「個人情報」とは、個人情報保護法に定める「個人情報」を指し、生存する個人に関する情報であって、当該情報に含まれる氏名、生年月日、その他の記述等により特定の個人を識別できる情報を指します。
+                    </p>
                 </div>
             </div>
 
-            <div class="date-section">
-                <p>制定日：2026年1月1日</p>
+            <div class="section">
+                <h2 class="section-title">2. 個人情報の収集方法</h2>
+                <div class="section-content">
+                    <p>当社は、以下の方法で個人情報を収集します。</p>
+                    <ul>
+                        <li>商品購入時の決済情報入力</li>
+                        <li>お問い合わせフォームからの送信</li>
+                        <li>メールマガジン登録</li>
+                        <li>無料レポートのダウンロード登録</li>
+                        <li>アンケート・ヒアリングシートの回答</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="contact-section">
-                <h3>個人情報に関するお問い合わせ</h3>
-                <p>
-                    個人情報の取り扱いに関するご質問やご相談は、<br>
-                    下記のメールアドレスまでお気軽にお問い合わせください。
-                </p>
-                <p class="email" style="margin-top: 30px;">info@sakimura.info</p>
-                <p style="margin-top: 20px; color: var(--color-gray); font-size: 0.9rem;">
-                    ※ 営業時間: 平日 10:00〜18:00（土日祝日を除く）<br>
-                    ※ お問い合わせへの回答には、2営業日程度いただく場合がございます。
-                </p>
+            <div class="section">
+                <h2 class="section-title">3. 収集する個人情報の項目</h2>
+                <div class="section-content">
+                    <p>当社が収集する個人情報は、以下の通りです。</p>
+                    <ul>
+                        <li>氏名(ニックネーム・ペンネームを含む)</li>
+                        <li>メールアドレス</li>
+                        <li>電話番号</li>
+                        <li>住所</li>
+                        <li>決済情報(クレジットカード情報等)</li>
+                        <li>その他、商品・サービス提供に必要な情報</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="back-link">
-                <a href="https://sakimura-drmlp.vercel.app/">← 販売ページに戻る</a>
+            <div class="section">
+                <h2 class="section-title">4. 個人情報の利用目的</h2>
+                <div class="section-content">
+                    <p>当社は、収集した個人情報を以下の目的で利用します。</p>
+                    <ul>
+                        <li>商品・サービスの提供、納品、アフターサポート</li>
+                        <li>ご注文内容、決済、配送に関する確認・連絡</li>
+                        <li>お問い合わせへの対応</li>
+                        <li>メールマガジン・ニュースレターの配信</li>
+                        <li>キャンペーン・イベント・新商品のご案内</li>
+                        <li>商品・サービスの改善・開発のための分析</li>
+                        <li>利用規約違反や不正利用の防止</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">5. 個人情報の第三者提供</h2>
+                <div class="section-content">
+                    <p>
+                        当社は、以下のいずれかに該当する場合を除き、お客様の個人情報を第三者に提供することはありません。
+                    </p>
+                    <ul>
+                        <li>お客様の同意がある場合</li>
+                        <li>法令に基づく場合</li>
+                        <li>人の生命、身体又は財産の保護のために必要がある場合であって、お客様の同意を得ることが困難である場合</li>
+                        <li>国の機関もしくは地方公共団体又はその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">6. 個人情報の業務委託</h2>
+                <div class="section-content">
+                    <p>
+                        当社は、業務の一部を外部に委託する場合があります。その際、個人情報を委託先に提供することがありますが、委託先には当社と同等の個人情報保護水準を求め、適切な管理・監督を行います。
+                    </p>
+                    <h4>主な委託先</h4>
+                    <ul>
+                        <li>決済代行会社(Stripe、UnivaPay等)</li>
+                        <li>メール配信サービス(UTAGE等)</li>
+                        <li>クラウドストレージサービス</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">7. 個人情報の安全管理</h2>
+                <div class="section-content">
+                    <p>
+                        当社は、お客様の個人情報を正確かつ最新の状態に保ち、個人情報への不正アクセス・紛失・破損・改ざん・漏洩などを防止するため、以下の安全管理措置を講じます。
+                    </p>
+                    <ul>
+                        <li>SSL/TLS暗号化通信の採用</li>
+                        <li>アクセス権限の管理</li>
+                        <li>ファイアウォールの設置</li>
+                        <li>セキュリティソフトウェアの導入</li>
+                        <li>従業員に対する教育・研修の実施</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">8. 個人情報の開示・訂正・削除</h2>
+                <div class="section-content">
+                    <p>
+                        お客様は、当社が保有するご自身の個人情報について、以下の権利を有します。
+                    </p>
+                    <ul>
+                        <li>個人情報の開示請求</li>
+                        <li>個人情報の訂正・追加・削除請求</li>
+                        <li>個人情報の利用停止・消去請求</li>
+                        <li>第三者提供の停止請求</li>
+                    </ul>
+                    <p style="margin-top: 20px;">
+                        これらの請求を希望される場合は、下記のお問い合わせ先までご連絡ください。<br>
+                        ご本人様確認の上、法令に基づき適切に対応いたします。
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">9. Cookie(クッキー)の使用について</h2>
+                <div class="section-content">
+                    <p>
+                        当社のウェブサイトでは、お客様により良いサービスを提供するため、Cookie(クッキー)を使用する場合があります。
+                    </p>
+                    <h4>Cookieとは</h4>
+                    <p>
+                        Cookieとは、ウェブサイトがお客様のブラウザを識別するために、お客様のコンピュータに送信する小さなデータファイルです。
+                    </p>
+                    <h4>Cookieの利用目的</h4>
+                    <ul>
+                        <li>ウェブサイトの利用状況の分析</li>
+                        <li>広告配信の最適化</li>
+                        <li>ユーザー体験の向上</li>
+                    </ul>
+                    <h4>Cookieの拒否</h4>
+                    <p>
+                        お客様は、ブラウザの設定によりCookieの受け取りを拒否することができます。<br>
+                        ただし、Cookieを無効にした場合、一部のサービスが正常に機能しない可能性があります。
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">10. アクセス解析ツールについて</h2>
+                <div class="section-content">
+                    <p>
+                        当社のウェブサイトでは、Googleアナリティクス等のアクセス解析ツールを使用する場合があります。<br>
+                        これらのツールはCookieを使用してお客様のアクセス情報を収集しますが、個人を特定する情報は含まれません。
+                    </p>
+                    <p style="margin-top: 15px;">
+                        詳細については、各サービス提供事業者のプライバシーポリシーをご確認ください。
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">11. プライバシーポリシーの変更</h2>
+                <div class="section-content">
+                    <p>
+                        当社は、法令の変更や事業内容の変更等に伴い、本プライバシーポリシーを変更することがあります。<br>
+                        変更後のプライバシーポリシーは、当ウェブサイトに掲載した時点で効力を生じるものとします。
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">12. お問い合わせ窓口</h2>
+                <div class="section-content">
+                    <p>
+                        個人情報の取り扱いに関するお問い合わせは、以下の窓口までご連絡ください。
+                    </p>
+                    <div style="margin-top: 30px; padding: 20px; background: var(--color-white); border: 2px solid var(--color-danger);">
+                        <p><strong>EZ企画合同会社 個人情報お問い合わせ窓口</strong></p>
+                        <p style="margin-top: 10px;">運営統括責任者:咲村 隆</p>
+                        <p>メールアドレス:info@sakimura.info</p>
+                        <p style="margin-top: 15px; font-size: 0.9rem; color: var(--color-gray);">
+                            ※お電話でのお問い合わせは受け付けておりません。<br>
+                            ※原則として2営業日以内に返信いたします。
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
